@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Regression Runner]">
+  <test thread-count="5" name="OrangeHrm Tests(failed)">
+    <classes>
+      <class name="com.test.orangehrm.tests.LoginTest">
+        <methods>
+          <include name="validatePositiveLoginTest"/>
+          <include name="validateNegativeLoginTest2"/>
+          <include name="validateNegativeLoginTest1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.orangehrm.tests.LoginTest -->
+      <class name="com.test.orangehrm.tests.PimTest">
+        <methods>
+          <include name="validateThePI"/>
+          <include name="validateEmployeeList"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.orangehrm.tests.PimTest -->
+      <class name="com.test.orangehrm.tests.AdminTest">
+        <methods>
+          <include name="validateUrlAndAddButton"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.orangehrm.tests.AdminTest -->
+      <class name="com.test.orangehrm.tests.MainPageTest">
+        <methods>
+          <include name="validatingAdminButton"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.test.orangehrm.tests.MainPageTest -->
+    </classes>
+  </test> <!-- OrangeHrm Tests(failed) -->
+</suite> <!-- Failed suite [TestNG Regression Runner] -->
